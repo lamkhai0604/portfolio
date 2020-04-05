@@ -1,7 +1,7 @@
 let i = 0;
 let txt = 'I am not entirely sure what you want to achieve, but I guess you want to display text on your webpage. You can do this like this';
 let speed = 50;
-const texts = ['Welcome my portfolio'];
+const texts = ['No one can make you feel inferior without your consent  --Eleanor Roosevelt'];
 let count = 0;
 let index = 0;
 let currentText = '';
@@ -37,5 +37,5 @@ function typeWriter() {
         count++;
         index = 0;
     }
-    setTimeout(type, 250)
+    setTimeout(type, 100)
 }());

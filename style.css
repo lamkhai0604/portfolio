@@ -119,7 +119,8 @@ img {
     padding: 2rem;
 }
 .nav-links a:hover {
-    background: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 @media screen and (max-width: 768px) {
     .line {
@@ -291,12 +292,13 @@ img {
 
 .btn-show-all {
     font-size: 2rem;
-    background: var(--main-gray);
+    background: #f2e70d;
     transition: background 0.3s ease-out;
 }
 
 .btn-show-all:hover {
-    background: var(--main-red);
+    background: #968f08;
+    color: #fefdec;
 }
 
 .btn-show-all:hover > i {
