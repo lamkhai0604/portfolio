@@ -1,5 +1,5 @@
 let i = 0;
-let txt = 'I am not entirely sure what you want to achieve, but I guess you want to display text on your webpage. You can do this like this';
+let txt = 'Nowadays information technology is growing faster than ever with the needs of humans in a developing world. Therefore, it acquired people to learn and self-improve to catch the flow of the century. With enthusiasm and interest in technology, I believe full-stack web development is a new challenge that I would love to take';
 let speed = 50;
 const texts = ['No one can make you feel inferior without your consent  --Eleanor Roosevelt'];
 let count = 0;
