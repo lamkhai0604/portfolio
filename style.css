@@ -88,15 +88,17 @@ img {
 
 .nav {
     display: flex;
-    background: #6c5f5b;
+    background: #ffccbb;
     position: fixed;
     width: 100%;
     height: 10vh;
 }
-.imgLogo{
-    width: auto;
-    height: 70px;
-    padding: 2px 0 0 30px;
+
+.nav > h3 {
+    font-size: 4.2rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    padding: 10px;
 }
 
 .nav-links {
@@ -118,9 +120,9 @@ img {
     font-size: 2.2rem;
     padding: 2rem;
 }
-.nav-links a:hover {
-    font-size: 20px;
-    font-weight: bold;
+.nav-links a:hover,
+.nav-links a:active{
+    color: brown;
 }
 @media screen and (max-width: 768px) {
     .line {
@@ -132,7 +134,7 @@ img {
     nav{
         position: relative;
     }
-    .hambuger {
+    .hamburger {
         position: absolute;
         cursor: pointer;
         right: 5%;
@@ -206,15 +208,14 @@ img {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #cdab81;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background-color: #6eb5c0;
+    background-image: linear-gradient(62deg, #6eb5c0 0%, #8fd0d8 100%);
 }
 
 .welcome-section > p {
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
-    color: var(--main-red);
 }
 
 /* Projects section */
@@ -222,13 +223,14 @@ img {
 .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: #dac3b3;
+    background: #006c84;
+    background-image: linear-gradient(62deg, #006c84 0%, #045061 100%);
 }
 
 .projects-section-header {
-    max-width: 640px;
+    max-width: 260px;
     margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid var(--main-white);
+    border-bottom: 0.2rem solid white;
 }
 
 @media (max-width: 28.75em) {
@@ -240,7 +242,7 @@ img {
 /* "Automagic" image grid using no media queries */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: auto auto;
     grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
@@ -284,7 +286,9 @@ img {
     padding: 2rem 0.5rem;
 }
 
-.btn {
+/* Button click me */
+
+/* .btn {
     display: inline-block;
     padding: 1rem 2rem;
     border-radius: 2px;
@@ -303,12 +307,65 @@ img {
 
 .btn-show-all:hover > i {
     transform: translateX(2px);
-}
+} */
 
-.btn-show-all > i {
+/* .btn-show-all > i {
     margin-left: 10px;
     transform: translateX(0);
     transition: transform 0.3s ease-out;
+} */
+
+.button {
+    background-color: #004A7F;  
+    -webkit-border-radius: 10px;  
+    border-radius: 10px;    
+    border: none;    
+    color: #FFFFFF;    
+    cursor: pointer;    
+    display: inline-block;    
+    font-family: Arial;    
+    font-size: 20px;    
+    padding: 5px 10px;    
+    text-align: center;   
+    text-decoration: none;
+   
+  }
+
+  @-webkit-keyframes glowing {
+    0% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+    50% { background-color: #0094FF; -webkit-box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+  }
+   
+  @-moz-keyframes glowing {
+    0% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+    50% { background-color: #0094FF; -moz-box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+  }
+   
+  @-o-keyframes glowing {
+    0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+    50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  }
+   
+  @keyframes glowing {
+    0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+    50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+    100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  }
+   
+  .button {
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+  }
+
+.status {
+    font-size: 30px;
+    color: white;
+    padding: 10px 15px;
 }
 
 /* Contact section */
@@ -322,11 +379,12 @@ img {
     width: 100%;
     height: 80vh;
     padding: 0 2rem;
-    background: #cdab81;
+    background: #e2e8e4;
 }
 
 .contact-section-header > h2 {
     font-size: 6rem;
+    color: #e4a51d;
 }
 
 @media (max-width: 28.75em) {
@@ -337,6 +395,9 @@ img {
 
 .contact-section-header > p {
     font-style: italic;
+    color: #e4a51d;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .contact-links {

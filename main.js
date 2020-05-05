@@ -16,6 +16,7 @@ hambuger.addEventListener('click', () => {
         link.classList.toggle("fade");
     });
 });
+
 function typeWriter() {
     if (i < txt.length) {
         document.getElementById("demo").innerHTML += txt.charAt(i);
