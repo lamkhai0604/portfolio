@@ -6,11 +6,11 @@ let count = 0;
 let index = 0;
 let currentText = '';
 let letter = '';
-const hambuger = document.querySelector('.hambuger');
+const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li')
 
-hambuger.addEventListener('click', () => {
+hamburger.addEventListener('click', () => {
     navLinks.classList.toggle("open");
     links.forEach(link => {
         link.classList.toggle("fade");
