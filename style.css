@@ -60,6 +60,7 @@ h2 {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     text-align: center;
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 h1 {
@@ -179,18 +180,7 @@ img {
         opacity: 1;
     }
 }
-.typing {
-    position: relative;
-}
-.typing::after {
-    content: "";
-    position: absolute;
-    right: -7px;
-    width: 1px;
-    height: 70%;
-    border-right: 4px solid white;
-    animation: blink 1s infinite ease;
-}
+
 @keyframes blink {
     0% {
         opacity: 0;
@@ -213,11 +203,42 @@ img {
     background-image: linear-gradient(62deg, #6eb5c0 0%, #8fd0d8 100%);
 }
 
+.welcome__section--content {
+    text-align: center;
+    margin: 20px;
+    position: sticky;
+    top: 100px;
+}
+
 .welcome-section > p {
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
 }
+
+.welcome__section--jobname {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
 
 /* Projects section */
 
@@ -420,27 +441,43 @@ img {
     transform: translateY(8px);
 }
 
+.typing {
+    position: relative;
+}
+.typing::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    border-right: 4px solid #e4a51d;
+    animation: blink 1s infinite ease;
+}
+
 /* Footer */
 
-footer {
-    font-weight: 300;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2rem;
+.main-footer {
     background: #4f4a45;
-    border-top: 4px solid var(--main-red);
+    padding: 32px;
 }
 
-footer > p {
-    margin: 2rem;
+.main__footer--links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
-footer i {
-    vertical-align: middle;
+.main__footer--link {
+    display: inline-block;
+    margin: 0 120px;
+}
+
+.main__footer--name {
+    color: #f0bc89;
 }
 
 @media (max-width: 28.75em) {
-    footer {
+    .main-footer {
         flex-direction: column;
         text-align: center;
     }

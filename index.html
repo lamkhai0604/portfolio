@@ -20,23 +20,23 @@
     <!-- START NAV -->
 
     <nav id="navbar" class="nav">
-        <h3>Khai's</h3>
+        <h3>Khai's portfolio</h3>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
-       </div>
-            <ul class="nav-links">
-                <li>
-                    <a href="#welcome-section">About</a>
-                </li>
-                <li>
-                    <a href="#projects">Work</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#welcome">About</a>
+            </li>
+            <li>
+                <a href="#projects">Work</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
     </nav>
 
 
@@ -44,9 +44,11 @@
     <!-- <h1 class="typing"></h1> animation typing -->
     <!-- START WELCOME SECTION -->
 
-    <section id="welcome-section" class="welcome-section">
-        <h1>Hello My name's Khai</h1>
-        <p>Full stack web developer</p>
+    <section id="welcome" class="welcome-section">
+        <div class="welcome__section--content">
+            <h1>Hello My name's Khai</h1>
+            <p class="welcome__section--jobname">Full stack web developer</p>
+        </div>
         <button type="button" class="button" onclick="typeWriter()">Click me</button>
         <p id="demo" class="status"></p>
     </section>
@@ -60,9 +62,7 @@
 
         <div class="projects-grid">
             <a href="https://khai-todolist.netlify.com/" target="_blank" class="project project-tile">
-                <img class="project-image"
-                    src="todo.png"
-                    alt="project" />
+                <img class="project-image" src="./pictures/todo.png" alt="project" />
                 <p class="project-title">
                     <span class="code">&lt;</span>
                     Todo List
@@ -70,9 +70,7 @@
                 </p>
             </a>
             <a href="https://khai-entertainment.netlify.com/" target="_blank" class="project project-tile">
-                <img class="project-image"
-                    src="movie.png"
-                    alt="project" />
+                <img class="project-image" src="./pictures/movie.png" alt="project" />
                 <p class="project-title">
                     <span class="code">&lt;</span>
                     Movie IMDB
@@ -80,9 +78,7 @@
                 </p>
             </a>
             <a href="https://khai-smurf.netlify.com/" target="_blank" class="project project-tile">
-                <img class="project-image"
-                    src="smurf.png"
-                    alt="project" />
+                <img class="project-image" src="./pictures/smurf.png" alt="project" />
                 <p class="project-title">
                     <span class="code">&lt;</span>
                     Smurf(Group project)
@@ -90,9 +86,7 @@
                 </p>
             </a>
             <a href="https://khai-eathere.netlify.com/" target="_blank" class="project project-tile">
-                <img class="project-image"
-                    src="eathere.png"
-                    alt="project" />
+                <img class="project-image" src="./pictures/eathere.png" alt="project" />
                 <p class="project-title">
                     <span class="code">&lt;</span>
                     Eat here page(Group project)
@@ -112,38 +106,40 @@
     <section id="contact" class="contact-section">
         <div class="contact-section-header">
             <h2>Contact me</h2>
-            <p>If you are interested in my profile don't hesitate to leave me a message or contact me directly via...</p>
+            <p class="typing"></p>
         </div>
         <div class="contact-links">
-            <a href="https://mail.google.com/mail/u/0/#inbox" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a> 
+            <a href="https://mail.google.com/mail/u/0/#inbox" class="btn contact-details"><i class="fas fa-at"></i> Send
+                a mail</a>
             <!-- mailto:example@example.com -->
             <a href="tel:0908.983.936" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
         </div>
     </section>
 
     <!-- END CONTACT SECTION -->
-    
+
     <!-- START FOOTER SECTION -->
 
-    <footer>
-        <p class="typing"></p>
-        <p>
-            &copy; Created by
-            <a href="#" target="_blank">Lam Khai <i class="fab fa-free-code-camp"></i></a>
-        </p>
+    <footer class="main-footer">
+        <nav>
+            <ul class="main__footer--links">
+                <li class="main__footer--link">
+                    <p>No one can make you feel inferior without your consent --Eleanor Roosevelt</p>
+                </li>
+                <li class="main__footer--link">
+                    &copy; Created by
+                    <a href="#" target="_blank" class="main__footer--name">
+                        Lam Khai
+                        <i class="fab fa-free-code-camp"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </footer>
 
     <!-- END FOOTER SECTION -->
     <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
+<!-- class="typing" -->
